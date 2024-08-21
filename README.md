@@ -4,7 +4,7 @@
 
 ## Demo
 
-### [https://app-router-contentful.vercel.app/](https://app-router-contentful.vercel.app/)
+### [https://starter-portfolio-six.vercel.app/](https://starter-portfolio-six.vercel.app/)
 
 
 ## Configuration

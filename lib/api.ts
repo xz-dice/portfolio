@@ -1,33 +1,3 @@
-const POST_GRAPHQL_FIELDS = `
-  slug
-  title
-  coverImage {
-    url
-  }
-  date
-  author {
-    name
-    picture {
-      url
-    }
-  }
-  excerpt
-  content {
-    json
-    links {
-      assets {
-        block {
-          sys {
-            id
-          }
-          url
-          description
-        }
-      }
-    }
-  }
-`;
-
 async function fetchGraphQL(query: string, preview = false): Promise<any> {
   return fetch(
     `https://graphql.contentful.com/content/v1/spaces/${process.env.CONTENTFUL_SPACE_ID}`,
@@ -62,20 +32,6 @@ function extractAboutPostEntries(fetchResponse: any): any {
 
 function extractPostEntries(fetchResponse: any): any[] {
   return fetchResponse?.data?.projectCollection?.items;
-}
-
-export async function getPreviewPostBySlug(slug: string | null): Promise<any> {
-  const entry = await fetchGraphQL(
-    `query {
-      postCollection(where: { slug: "${slug}" }, preview: true, limit: 1) {
-        items {
-          ${POST_GRAPHQL_FIELDS}
-        }
-      }
-    }`,
-    true,
-  );
-  return extractPost(entry);
 }
 
 export async function getHeroSection(isDraftMode: boolean): Promise<any> {
@@ -139,7 +95,7 @@ export async function getAllPosts(isDraftMode: boolean): Promise<any[]> {
   return extractPostEntries(entries);
 }
 
-export async function getPostAndMorePosts(
+export async function getPost(
   slug: string,
   preview: boolean,
 ): Promise<any> {

@@ -1,10 +1,10 @@
 :root {
   --navigation-bg: #2196f3;
-  --footer-bg: #000000;
-  --hero-bg: #000000;
-  --project-bg: #000000;
-  --hero-text-color: #000000;
-  --project-button: #000000;
+  --footer-bg: #673ab7;
+  --hero-bg: #081520;
+  --project-bg: #fcfcfc;
+  --hero-text-color: #fcfcfc;
+  --project-button: #131d5c;
 }
 
  body {
@@ -49,6 +49,7 @@
   margin: 0;
   font-size: 60px;
  }
+
  .page-left, .page-right {
   display: flex;
   flex-direction: column;
@@ -61,8 +62,12 @@
   position: sticky;
   height: 100vh;
   top: 0;
-  background-color: #081520;
-  color: #fcfcfcff;
+  background-color: var(--hero-bg);
+  color: var(--hero-text-color);
+ }
+
+ .page-right {
+    background-color: var(--project-bg);
  }
 
  h1 {
@@ -107,12 +112,12 @@
 }
 
 .project-button {
-  border: 2px solid #131d5c;
+  border: 2px solid var(--project-button);
   padding: 10px;
 }
 
 .project-button:hover {
-  background-color: #131d5c;
+  background-color: var(--project-button);
   color: #f4f9fc;
 }
 
@@ -122,7 +127,7 @@
  }
 
  footer {
-  background-color: #673ab7;
+  background-color: var(--footer-bg);
   border: 2px solid #081520;
   border-top: none;
  }
@@ -171,7 +176,7 @@
 }
 
 .project-image img {
-  width: 300px;
+  width: 200px;
   height: auto;
 }
 

@@ -26,7 +26,6 @@ function Footer() {
                 <ContentfulImage
                 src={GitHubLogo}
                 height="100"
-                className="rounded-full"
                 alt="github logo"
               />
             </a>
@@ -36,7 +35,6 @@ function Footer() {
                 <ContentfulImage
                 src={LinkedInLogo}
                 height="100"
-                className="rounded-full"
                 alt="linkedin logo"
               />
             </a>
@@ -46,7 +44,6 @@ function Footer() {
                 <ContentfulImage
                 src={InstagramLogo}
                 height="100"
-                className="rounded-full"
                 alt="instagram logo"
               />
             </a>

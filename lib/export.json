@@ -6,13 +6,13 @@
           "sys": {
             "type": "Link",
             "linkType": "Space",
-            "id": "p5asbbjx1p90"
+            "id": "lkzyrltxuq5d"
           }
         },
-        "id": "author",
+        "id": "hero",
         "type": "ContentType",
-        "createdAt": "2020-04-22T09:32:50.535Z",
-        "updatedAt": "2020-04-22T09:32:50.885Z",
+        "createdAt": "2024-08-19T20:22:36.043Z",
+        "updatedAt": "2024-08-21T01:32:13.773Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -20,57 +20,59 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 1,
-        "publishedAt": "2020-04-22T09:32:50.885Z",
-        "firstPublishedAt": "2020-04-22T09:32:50.885Z",
+        "publishedVersion": 5,
+        "publishedAt": "2024-08-21T01:32:13.773Z",
+        "firstPublishedAt": "2024-08-19T20:22:36.305Z",
         "createdBy": {
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "066RqBikAjzKy0SWUEtFvH"
+            "id": "1CDBzySYdM8I3Kvr3h6A0D"
           }
         },
         "updatedBy": {
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "066RqBikAjzKy0SWUEtFvH"
+            "id": "1CDBzySYdM8I3Kvr3h6A0D"
           }
         },
-        "publishedCounter": 1,
-        "version": 2,
+        "publishedCounter": 3,
+        "version": 6,
         "publishedBy": {
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "066RqBikAjzKy0SWUEtFvH"
+            "id": "1CDBzySYdM8I3Kvr3h6A0D"
           }
-        }
+        },
+        "urn": "crn:contentful:::content:spaces/lkzyrltxuq5d/environments/master/content_types/hero"
       },
-      "displayField": "name",
-      "name": "Author",
+      "displayField": "title",
+      "name": "Hero",
       "description": "",
       "fields": [
         {
-          "id": "name",
-          "name": "Name",
+          "id": "title",
+          "name": "Title",
           "type": "Symbol",
           "localized": false,
-          "required": true,
-          "validations": [],
+          "required": false,
+          "validations": [
+          ],
           "disabled": false,
           "omitted": false
         },
         {
-          "id": "picture",
-          "name": "Picture",
-          "type": "Link",
+          "id": "subtitle",
+          "name": "Subtitle",
+          "type": "Text",
           "localized": false,
-          "required": true,
-          "validations": [],
+          "required": false,
+          "validations": [
+          ],
           "disabled": false,
-          "omitted": false,
-          "linkType": "Asset"
+          "omitted": false
         }
       ]
     },
@@ -80,13 +82,13 @@
           "sys": {
             "type": "Link",
             "linkType": "Space",
-            "id": "p5asbbjx1p90"
+            "id": "lkzyrltxuq5d"
           }
         },
-        "id": "post",
+        "id": "about",
         "type": "ContentType",
-        "createdAt": "2020-04-22T09:34:36.878Z",
-        "updatedAt": "2020-04-22T12:23:57.726Z",
+        "createdAt": "2024-08-19T20:23:47.808Z",
+        "updatedAt": "2024-08-21T11:55:11.810Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -94,35 +96,36 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 3,
-        "publishedAt": "2020-04-22T12:23:57.726Z",
-        "firstPublishedAt": "2020-04-22T09:34:37.228Z",
+        "publishedVersion": 15,
+        "publishedAt": "2024-08-21T11:55:11.810Z",
+        "firstPublishedAt": "2024-08-19T20:23:48.087Z",
         "createdBy": {
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "066RqBikAjzKy0SWUEtFvH"
+            "id": "1CDBzySYdM8I3Kvr3h6A0D"
           }
         },
         "updatedBy": {
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "066RqBikAjzKy0SWUEtFvH"
+            "id": "1CDBzySYdM8I3Kvr3h6A0D"
           }
         },
-        "publishedCounter": 2,
-        "version": 4,
+        "publishedCounter": 8,
+        "version": 16,
         "publishedBy": {
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "066RqBikAjzKy0SWUEtFvH"
+            "id": "1CDBzySYdM8I3Kvr3h6A0D"
           }
-        }
+        },
+        "urn": "crn:contentful:::content:spaces/lkzyrltxuq5d/environments/master/content_types/about"
       },
       "displayField": "title",
-      "name": "Post",
+      "name": "About",
       "description": "",
       "fields": [
         {
@@ -130,31 +133,29 @@
           "name": "Title",
           "type": "Symbol",
           "localized": false,
-          "required": true,
-          "validations": [],
+          "required": false,
+          "validations": [
+          ],
           "disabled": false,
           "omitted": false
         },
         {
-          "id": "slug",
-          "name": "Slug",
-          "type": "Symbol",
-          "localized": false,
-          "required": true,
-          "validations": [],
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "content",
-          "name": "Content",
+          "id": "description",
+          "name": "Description",
           "type": "RichText",
           "localized": false,
-          "required": true,
+          "required": false,
           "validations": [
             {
-              "enabledMarks": ["bold", "italic", "underline", "code"],
-              "message": "Only bold, italic, underline, and code marks are allowed"
+              "enabledMarks": [
+                "bold",
+                "italic",
+                "underline",
+                "code",
+                "superscript",
+                "subscript"
+              ],
+              "message": "Only bold, italic, underline, code, superscript, and subscript marks are allowed"
             },
             {
               "enabledNodeTypes": [
@@ -168,52 +169,169 @@
                 "unordered-list",
                 "hr",
                 "blockquote",
-                "embedded-entry-block",
-                "embedded-asset-block",
-                "hyperlink",
-                "entry-hyperlink",
-                "asset-hyperlink",
-                "embedded-entry-inline"
+                "table"
               ],
-              "message": "Only heading 1, heading 2, heading 3, heading 4, heading 5, heading 6, ordered list, unordered list, horizontal rule, quote, block entry, asset, link to Url, link to entry, link to asset, and inline entry nodes are allowed"
+              "message": "Only heading 1, heading 2, heading 3, heading 4, heading 5, heading 6, ordered list, unordered list, horizontal rule, quote, and table nodes are allowed"
             },
             {
               "nodes": {
-                "asset-hyperlink": [
-                  {
-                    "size": {
-                      "max": 10
-                    },
-                    "message": null
-                  }
-                ],
+              }
+            }
+          ],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "lkzyrltxuq5d"
+          }
+        },
+        "id": "project",
+        "type": "ContentType",
+        "createdAt": "2024-08-19T20:27:33.772Z",
+        "updatedAt": "2024-08-21T11:58:55.905Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 19,
+        "publishedAt": "2024-08-21T11:58:55.905Z",
+        "firstPublishedAt": "2024-08-19T20:27:34.263Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1CDBzySYdM8I3Kvr3h6A0D"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1CDBzySYdM8I3Kvr3h6A0D"
+          }
+        },
+        "publishedCounter": 10,
+        "version": 20,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1CDBzySYdM8I3Kvr3h6A0D"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/lkzyrltxuq5d/environments/master/content_types/project"
+      },
+      "displayField": "title",
+      "name": "Project",
+      "description": "",
+      "fields": [
+        {
+          "id": "title",
+          "name": "Title",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "slug",
+          "name": "Slug",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "gitHubLink",
+          "name": "GitHub Link",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "image",
+          "name": "Image",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Asset"
+        },
+        {
+          "id": "shortDescription",
+          "name": "Short Description",
+          "type": "Text",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "longDescription",
+          "name": "Long Description",
+          "type": "RichText",
+          "localized": false,
+          "required": false,
+          "validations": [
+            {
+              "enabledMarks": [
+                "bold",
+                "italic",
+                "underline",
+                "code",
+                "superscript",
+                "subscript"
+              ],
+              "message": "Only bold, italic, underline, code, superscript, and subscript marks are allowed"
+            },
+            {
+              "enabledNodeTypes": [
+                "heading-1",
+                "heading-2",
+                "heading-3",
+                "heading-4",
+                "heading-5",
+                "heading-6",
+                "ordered-list",
+                "unordered-list",
+                "hr",
+                "blockquote",
+                "table",
+                "embedded-asset-block"
+              ],
+              "message": "Only heading 1, heading 2, heading 3, heading 4, heading 5, heading 6, ordered list, unordered list, horizontal rule, quote, table, and asset nodes are allowed"
+            },
+            {
+              "nodes": {
                 "embedded-asset-block": [
                   {
                     "size": {
-                      "max": 10
-                    },
-                    "message": null
-                  }
-                ],
-                "embedded-entry-block": [
-                  {
-                    "size": {
-                      "max": 10
-                    },
-                    "message": null
-                  }
-                ],
-                "embedded-entry-inline": [
-                  {
-                    "size": {
-                      "max": 10
-                    },
-                    "message": null
-                  }
-                ],
-                "entry-hyperlink": [
-                  {
-                    "size": {
+                      "min": 0,
                       "max": 10
                     },
                     "message": null
@@ -224,55 +342,11 @@
           ],
           "disabled": false,
           "omitted": false
-        },
-        {
-          "id": "excerpt",
-          "name": "Excerpt",
-          "type": "Symbol",
-          "localized": false,
-          "required": true,
-          "validations": [],
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "coverImage",
-          "name": "Cover Image",
-          "type": "Link",
-          "localized": false,
-          "required": true,
-          "validations": [],
-          "disabled": false,
-          "omitted": false,
-          "linkType": "Asset"
-        },
-        {
-          "id": "date",
-          "name": "Date",
-          "type": "Date",
-          "localized": false,
-          "required": true,
-          "validations": [],
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "author",
-          "name": "Author",
-          "type": "Link",
-          "localized": false,
-          "required": true,
-          "validations": [
-            {
-              "linkContentType": ["author"]
-            }
-          ],
-          "disabled": false,
-          "omitted": false,
-          "linkType": "Entry"
         }
       ]
     }
+  ],
+  "tags": [
   ],
   "editorInterfaces": [
     {
@@ -281,31 +355,31 @@
         "type": "EditorInterface",
         "space": {
           "sys": {
-            "id": "p5asbbjx1p90",
+            "id": "lkzyrltxuq5d",
             "type": "Link",
             "linkType": "Space"
           }
         },
-        "version": 2,
-        "createdAt": "2020-04-22T09:32:50.954Z",
+        "version": 6,
+        "createdAt": "2024-08-19T20:22:36.441Z",
         "createdBy": {
           "sys": {
-            "id": "066RqBikAjzKy0SWUEtFvH",
+            "id": "1CDBzySYdM8I3Kvr3h6A0D",
             "type": "Link",
             "linkType": "User"
           }
         },
-        "updatedAt": "2020-04-22T09:32:51.642Z",
+        "updatedAt": "2024-08-21T01:32:14.241Z",
         "updatedBy": {
           "sys": {
-            "id": "066RqBikAjzKy0SWUEtFvH",
+            "id": "1CDBzySYdM8I3Kvr3h6A0D",
             "type": "Link",
             "linkType": "User"
           }
         },
         "contentType": {
           "sys": {
-            "id": "author",
+            "id": "hero",
             "type": "Link",
             "linkType": "ContentType"
           }
@@ -320,13 +394,13 @@
       },
       "controls": [
         {
-          "fieldId": "name",
+          "fieldId": "title",
           "widgetId": "singleLine",
           "widgetNamespace": "builtin"
         },
         {
-          "fieldId": "picture",
-          "widgetId": "assetLinkEditor",
+          "fieldId": "subtitle",
+          "widgetId": "singleLine",
           "widgetNamespace": "builtin"
         }
       ]
@@ -337,31 +411,87 @@
         "type": "EditorInterface",
         "space": {
           "sys": {
-            "id": "p5asbbjx1p90",
+            "id": "lkzyrltxuq5d",
             "type": "Link",
             "linkType": "Space"
           }
         },
-        "version": 4,
-        "createdAt": "2020-04-22T09:34:37.309Z",
+        "version": 16,
+        "createdAt": "2024-08-19T20:23:48.266Z",
         "createdBy": {
           "sys": {
-            "id": "066RqBikAjzKy0SWUEtFvH",
+            "id": "1CDBzySYdM8I3Kvr3h6A0D",
             "type": "Link",
             "linkType": "User"
           }
         },
-        "updatedAt": "2020-04-22T12:23:58.324Z",
+        "updatedAt": "2024-08-21T11:55:12.347Z",
         "updatedBy": {
           "sys": {
-            "id": "066RqBikAjzKy0SWUEtFvH",
+            "id": "1CDBzySYdM8I3Kvr3h6A0D",
             "type": "Link",
             "linkType": "User"
           }
         },
         "contentType": {
           "sys": {
-            "id": "post",
+            "id": "about",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "title",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "description",
+          "widgetId": "richTextEditor",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "lkzyrltxuq5d",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 20,
+        "createdAt": "2024-08-19T20:27:34.465Z",
+        "createdBy": {
+          "sys": {
+            "id": "1CDBzySYdM8I3Kvr3h6A0D",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2024-08-21T11:58:56.383Z",
+        "updatedBy": {
+          "sys": {
+            "id": "1CDBzySYdM8I3Kvr3h6A0D",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "project",
             "type": "Link",
             "linkType": "ContentType"
           }
@@ -386,31 +516,1306 @@
           "widgetNamespace": "builtin"
         },
         {
-          "fieldId": "content",
-          "widgetId": "richTextEditor",
+          "fieldId": "gitHubLink",
+          "widgetId": "urlEditor",
           "widgetNamespace": "builtin"
         },
         {
-          "fieldId": "excerpt",
-          "widgetId": "singleLine",
-          "widgetNamespace": "builtin"
-        },
-        {
-          "fieldId": "coverImage",
+          "fieldId": "image",
           "widgetId": "assetLinkEditor",
           "widgetNamespace": "builtin"
         },
         {
-          "fieldId": "date",
-          "widgetId": "datePicker",
+          "fieldId": "shortDescription",
+          "widgetId": "markdown",
           "widgetNamespace": "builtin"
         },
         {
-          "fieldId": "author",
-          "widgetId": "entryLinkEditor",
+          "fieldId": "longDescription",
+          "widgetId": "richTextEditor",
           "widgetNamespace": "builtin"
         }
       ]
+    }
+  ],
+  "entries": [
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "lkzyrltxuq5d"
+          }
+        },
+        "id": "7sUVx3JC0L0f8a7EbB5ITg",
+        "type": "Entry",
+        "createdAt": "2024-08-20T23:41:48.537Z",
+        "updatedAt": "2024-08-21T03:02:13.675Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 12,
+        "publishedAt": "2024-08-21T03:02:13.675Z",
+        "firstPublishedAt": "2024-08-20T23:42:02.265Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1CDBzySYdM8I3Kvr3h6A0D"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1CDBzySYdM8I3Kvr3h6A0D"
+          }
+        },
+        "publishedCounter": 3,
+        "version": 13,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1CDBzySYdM8I3Kvr3h6A0D"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "hero"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/lkzyrltxuq5d/environments/master/entries/7sUVx3JC0L0f8a7EbB5ITg"
+      },
+      "fields": {
+        "title": {
+          "en-US": "Hello! I'm Codie."
+        },
+        "subtitle": {
+          "en-US": "I am a software engineer focused on front-end based in the New York City area."
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "lkzyrltxuq5d"
+          }
+        },
+        "id": "37ZHYsnsq7Wgqye792uFYk",
+        "type": "Entry",
+        "createdAt": "2024-08-20T23:42:07.007Z",
+        "updatedAt": "2024-08-21T10:20:12.075Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 23,
+        "publishedAt": "2024-08-21T10:20:12.075Z",
+        "firstPublishedAt": "2024-08-20T23:42:14.909Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1CDBzySYdM8I3Kvr3h6A0D"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1CDBzySYdM8I3Kvr3h6A0D"
+          }
+        },
+        "publishedCounter": 7,
+        "version": 24,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1CDBzySYdM8I3Kvr3h6A0D"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "about"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/lkzyrltxuq5d/environments/master/entries/37ZHYsnsq7Wgqye792uFYk"
+      },
+      "fields": {
+        "title": {
+          "en-US": "About Me"
+        },
+        "description": {
+          "en-US": {
+            "data": {
+            },
+            "content": [
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "I'm a software engineer based in NYC with a passion for front-end development and accessibility. I strive to create user-friendly, inclusive web experiences that everyone can enjoy. I have previously worked at design agencies, tech startups and fashion companies.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "When I'm not coding, you'll likely find me training for my next marathon, listening to new music or diving into fascinating facts about lizards and exploring the unique world of reptiles. 🦎",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              }
+            ],
+            "nodeType": "document"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "lkzyrltxuq5d"
+          }
+        },
+        "id": "1pkKNh1oiy8cyYjmU2e3Tl",
+        "type": "Entry",
+        "createdAt": "2024-08-20T23:42:18.457Z",
+        "updatedAt": "2024-08-21T12:16:05.847Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 38,
+        "publishedAt": "2024-08-21T12:16:05.847Z",
+        "firstPublishedAt": "2024-08-20T23:43:25.166Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1CDBzySYdM8I3Kvr3h6A0D"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1CDBzySYdM8I3Kvr3h6A0D"
+          }
+        },
+        "publishedCounter": 5,
+        "version": 39,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1CDBzySYdM8I3Kvr3h6A0D"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "project"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/lkzyrltxuq5d/environments/master/entries/1pkKNh1oiy8cyYjmU2e3Tl"
+      },
+      "fields": {
+        "title": {
+          "en-US": "Tune Track"
+        },
+        "slug": {
+          "en-US": "tune-track"
+        },
+        "gitHubLink": {
+          "en-US": "https://www.github.com"
+        },
+        "image": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "5jD1zlzjyLuk4Kw9j2WmFG"
+            }
+          }
+        },
+        "shortDescription": {
+          "en-US": "TuneTrack is a personal concert diary, to record and relive live music experiences. Built with: Next.js, Tailwind, and Contentful"
+        },
+        "longDescription": {
+          "en-US": {
+            "data": {
+            },
+            "content": [
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "I can track the shows I've attended, capture the details of each performance, and build a timeline of my musical journey. Whether I'm a festival fanatic or a local gig enthusiast, TuneTrack helps me keep my concert memories alive, all in one place.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "Built with: Next.js, Tailwind, and Contentful",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "heading-4"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "Here are the features:",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "data": {
+                            },
+                            "marks": [
+                              {
+                                "type": "bold"
+                              }
+                            ],
+                            "value": "Concert Timeline: ",
+                            "nodeType": "text"
+                          },
+                          {
+                            "data": {
+                            },
+                            "marks": [
+                            ],
+                            "value": "View a chronological timeline of all the concerts I've attended, complete with dates, locations, and artists.",
+                            "nodeType": "text"
+                          }
+                        ],
+                        "nodeType": "paragraph"
+                      }
+                    ],
+                    "nodeType": "list-item"
+                  },
+                  {
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "data": {
+                            },
+                            "marks": [
+                              {
+                                "type": "bold"
+                              }
+                            ],
+                            "value": "Setlist Archive: ",
+                            "nodeType": "text"
+                          },
+                          {
+                            "data": {
+                            },
+                            "marks": [
+                            ],
+                            "value": "Saved setlists from each concert, adding notes or personal highlights to remember every detail.",
+                            "nodeType": "text"
+                          }
+                        ],
+                        "nodeType": "paragraph"
+                      }
+                    ],
+                    "nodeType": "list-item"
+                  },
+                  {
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "data": {
+                            },
+                            "marks": [
+                              {
+                                "type": "bold"
+                              }
+                            ],
+                            "value": "Favorite Moments: ",
+                            "nodeType": "text"
+                          },
+                          {
+                            "data": {
+                            },
+                            "marks": [
+                            ],
+                            "value": "Highlights of my favorite performances or moments from each concert with a star or heart feature.",
+                            "nodeType": "text"
+                          }
+                        ],
+                        "nodeType": "paragraph"
+                      }
+                    ],
+                    "nodeType": "list-item"
+                  },
+                  {
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "data": {
+                            },
+                            "marks": [
+                              {
+                                "type": "bold"
+                              }
+                            ],
+                            "value": "Concert Wishlist: ",
+                            "nodeType": "text"
+                          },
+                          {
+                            "data": {
+                            },
+                            "marks": [
+                            ],
+                            "value": "A list of artists or upcoming shows I want to attend in the future.",
+                            "nodeType": "text"
+                          }
+                        ],
+                        "nodeType": "paragraph"
+                      }
+                    ],
+                    "nodeType": "list-item"
+                  }
+                ],
+                "nodeType": "unordered-list"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              }
+            ],
+            "nodeType": "document"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "lkzyrltxuq5d"
+          }
+        },
+        "id": "3dJHDsveBHT3ocKMWcm3g8",
+        "type": "Entry",
+        "createdAt": "2024-08-21T00:12:50.404Z",
+        "updatedAt": "2024-08-21T12:16:11.219Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 27,
+        "publishedAt": "2024-08-21T12:16:11.219Z",
+        "firstPublishedAt": "2024-08-21T00:12:55.949Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1CDBzySYdM8I3Kvr3h6A0D"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1CDBzySYdM8I3Kvr3h6A0D"
+          }
+        },
+        "publishedCounter": 7,
+        "version": 28,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1CDBzySYdM8I3Kvr3h6A0D"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "project"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/lkzyrltxuq5d/environments/master/entries/3dJHDsveBHT3ocKMWcm3g8"
+      },
+      "fields": {
+        "title": {
+          "en-US": "Adopt-A-Pup"
+        },
+        "slug": {
+          "en-US": "adopt-a-pup"
+        },
+        "gitHubLink": {
+          "en-US": "https://www.github.com"
+        },
+        "image": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "2WeDfWK0KMKuOsyk6lN0QS"
+            }
+          }
+        },
+        "shortDescription": {
+          "en-US": "Adopt-A-Pup is an app for finding dogs available for adoption in your area, including profiles, matching and search. Built With: Remix, Tailwind, Google Maps API, MongoDB"
+        },
+        "longDescription": {
+          "en-US": {
+            "data": {
+            },
+            "content": [
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "value": "Adopt-A-Pup",
+                    "nodeType": "text"
+                  },
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": " is my go-to app for finding dogs available for adoption. I can easily search for dogs based on breed, size, age, or location, making it simple to find the perfect match. The app also lets me view detailed profiles of each dog, complete with photos and personality descriptions, so I can get a sense of their temperament before meeting them. I can save my favorite dogs to a personalized list, making it easy to keep track of potential matches. Plus, I receive notifications about new dogs that fit my preferences, ensuring I never miss out on finding my future furry friend.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "Built With: Remix, Tailwind, Google Maps API, MongoDB",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "heading-4"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              }
+            ],
+            "nodeType": "document"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "lkzyrltxuq5d"
+          }
+        },
+        "id": "1qztIJNafFmeJVgMugw229",
+        "type": "Entry",
+        "createdAt": "2024-08-21T01:41:58.088Z",
+        "updatedAt": "2024-08-21T04:14:50.990Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 16,
+        "publishedAt": "2024-08-21T04:14:50.990Z",
+        "firstPublishedAt": "2024-08-21T01:44:37.282Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1CDBzySYdM8I3Kvr3h6A0D"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1CDBzySYdM8I3Kvr3h6A0D"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 17,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1CDBzySYdM8I3Kvr3h6A0D"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "project"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/lkzyrltxuq5d/environments/master/entries/1qztIJNafFmeJVgMugw229"
+      },
+      "fields": {
+        "title": {
+          "en-US": "Chef's Table"
+        },
+        "slug": {
+          "en-US": "chefs-table"
+        },
+        "gitHubLink": {
+          "en-US": "https://www.github.com"
+        },
+        "image": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "59JxTNRzQlt7aODmVg0QlP"
+            }
+          }
+        },
+        "shortDescription": {
+          "en-US": "Chef's Table is the ultimate dinner party planning assistant. This app can plan every detail of a new gathering, from crafting the perfect menu to sending out invitations to friends. Built with: Vue.js, Yelp API, Firebase"
+        },
+        "longDescription": {
+          "en-US": {
+            "data": {
+            },
+            "content": [
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "value": "Chef's Table",
+                    "nodeType": "text"
+                  },
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": " is my ultimate dinner party planning assistant. With this app, I can  plan every detail of my next gathering, from crafting the perfect menu to sending out invitations to my friends. I can explore a wide range of recipes and customize them to fit my guests' tastes and dietary restrictions. ",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "Chef's Table also helps me manage allergies and special dietary needs. Plus, it provides easy-to-follow shopping lists and cooking timelines to make hosting a breeze. Whether it’s an intimate dinner or a festive celebration, Chef's Table makes every event a culinary success.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "Built with: Vue.js, Yelp API, Firebase",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "heading-4"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              }
+            ],
+            "nodeType": "document"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "lkzyrltxuq5d"
+          }
+        },
+        "id": "1qjdrn1YPo3NylaHQZC7rC",
+        "type": "Entry",
+        "createdAt": "2024-08-21T04:15:42.292Z",
+        "updatedAt": "2024-08-21T12:16:05.808Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 14,
+        "publishedAt": "2024-08-21T12:16:05.808Z",
+        "firstPublishedAt": "2024-08-21T04:17:28.985Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1CDBzySYdM8I3Kvr3h6A0D"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1CDBzySYdM8I3Kvr3h6A0D"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 15,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1CDBzySYdM8I3Kvr3h6A0D"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "project"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/lkzyrltxuq5d/environments/master/entries/1qjdrn1YPo3NylaHQZC7rC"
+      },
+      "fields": {
+        "title": {
+          "en-US": "Buy or Bye?"
+        },
+        "slug": {
+          "en-US": "buy-or-bye"
+        },
+        "gitHubLink": {
+          "en-US": "https://github.com"
+        },
+        "image": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "7MpnhqCEma9pUYW78hVJYE"
+            }
+          }
+        },
+        "shortDescription": {
+          "en-US": "Buy or Bye? is a fun quiz app that will help you determine if you should purchase the newest iPhone or wait until the next release. Build with React.js, Tailwind, MongoDB."
+        },
+        "longDescription": {
+          "en-US": {
+            "data": {
+            },
+            "content": [
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "value": "Buy or Bye?",
+                    "nodeType": "text"
+                  },
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": " is a fun and interactive quiz app designed to help you decide whether to buy the latest iPhone or wait for the next release. Built with React.js for a dynamic user experience, Tailwind for sleek and responsive design, and MongoDB for efficient data management, this app provides a series of engaging questions to assess your needs and preferences. By analyzing your responses, ",
+                    "nodeType": "text"
+                  },
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "value": "Buy or Bye?",
+                    "nodeType": "text"
+                  },
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": " delivers personalized recommendations, guiding you on whether it's worth making a purchase now or holding out for the next model. It’s the perfect tool for tech enthusiasts looking to make informed decisions on their next big buy.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              }
+            ],
+            "nodeType": "document"
+          }
+        }
+      }
+    }
+  ],
+  "assets": [
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "lkzyrltxuq5d"
+          }
+        },
+        "id": "5jD1zlzjyLuk4Kw9j2WmFG",
+        "type": "Asset",
+        "createdAt": "2024-08-20T23:42:33.040Z",
+        "updatedAt": "2024-08-21T01:30:39.739Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 8,
+        "publishedAt": "2024-08-21T01:30:39.739Z",
+        "firstPublishedAt": "2024-08-20T23:42:48.888Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1CDBzySYdM8I3Kvr3h6A0D"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1CDBzySYdM8I3Kvr3h6A0D"
+          }
+        },
+        "publishedCounter": 3,
+        "version": 9,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1CDBzySYdM8I3Kvr3h6A0D"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/lkzyrltxuq5d/environments/master/assets/5jD1zlzjyLuk4Kw9j2WmFG"
+      },
+      "fields": {
+        "title": {
+          "en-US": "guitar"
+        },
+        "description": {
+          "en-US": ""
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/lkzyrltxuq5d/5jD1zlzjyLuk4Kw9j2WmFG/e42b5c917f60e39bceb99cc21702f8ae/guitar.png",
+            "details": {
+              "size": 22173,
+              "image": {
+                "width": 160,
+                "height": 160
+              }
+            },
+            "fileName": "guitar.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "lkzyrltxuq5d"
+          }
+        },
+        "id": "7MpnhqCEma9pUYW78hVJYE",
+        "type": "Asset",
+        "createdAt": "2024-08-21T01:30:19.547Z",
+        "updatedAt": "2024-08-21T01:30:34.390Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "publishedAt": "2024-08-21T01:30:34.390Z",
+        "firstPublishedAt": "2024-08-21T01:30:34.390Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1CDBzySYdM8I3Kvr3h6A0D"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1CDBzySYdM8I3Kvr3h6A0D"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1CDBzySYdM8I3Kvr3h6A0D"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/lkzyrltxuq5d/environments/master/assets/7MpnhqCEma9pUYW78hVJYE"
+      },
+      "fields": {
+        "title": {
+          "en-US": "mobile-phone"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/lkzyrltxuq5d/7MpnhqCEma9pUYW78hVJYE/f70811b360d38dbb0739f1b363c136c2/mobile-phone.png",
+            "details": {
+              "size": 8138,
+              "image": {
+                "width": 160,
+                "height": 160
+              }
+            },
+            "fileName": "mobile-phone.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "lkzyrltxuq5d"
+          }
+        },
+        "id": "2WeDfWK0KMKuOsyk6lN0QS",
+        "type": "Asset",
+        "createdAt": "2024-08-21T01:30:19.587Z",
+        "updatedAt": "2024-08-21T01:30:34.393Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "publishedAt": "2024-08-21T01:30:34.393Z",
+        "firstPublishedAt": "2024-08-21T01:30:34.393Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1CDBzySYdM8I3Kvr3h6A0D"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1CDBzySYdM8I3Kvr3h6A0D"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1CDBzySYdM8I3Kvr3h6A0D"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/lkzyrltxuq5d/environments/master/assets/2WeDfWK0KMKuOsyk6lN0QS"
+      },
+      "fields": {
+        "title": {
+          "en-US": "dog"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/lkzyrltxuq5d/2WeDfWK0KMKuOsyk6lN0QS/8ab85e77d0315b1552e501cfd899fff8/dog.png",
+            "details": {
+              "size": 30946,
+              "image": {
+                "width": 160,
+                "height": 160
+              }
+            },
+            "fileName": "dog.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "lkzyrltxuq5d"
+          }
+        },
+        "id": "59JxTNRzQlt7aODmVg0QlP",
+        "type": "Asset",
+        "createdAt": "2024-08-21T01:30:19.612Z",
+        "updatedAt": "2024-08-21T01:30:34.386Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "publishedAt": "2024-08-21T01:30:34.386Z",
+        "firstPublishedAt": "2024-08-21T01:30:34.386Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1CDBzySYdM8I3Kvr3h6A0D"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1CDBzySYdM8I3Kvr3h6A0D"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1CDBzySYdM8I3Kvr3h6A0D"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/lkzyrltxuq5d/environments/master/assets/59JxTNRzQlt7aODmVg0QlP"
+      },
+      "fields": {
+        "title": {
+          "en-US": "party-face"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/lkzyrltxuq5d/59JxTNRzQlt7aODmVg0QlP/2630263a1805578f2deaa584b41313c9/party-face.png",
+            "details": {
+              "size": 36577,
+              "image": {
+                "width": 160,
+                "height": 160
+              }
+            },
+            "fileName": "party-face.png",
+            "contentType": "image/png"
+          }
+        }
+      }
     }
   ],
   "locales": [
@@ -424,42 +1829,44 @@
       "optional": false,
       "sys": {
         "type": "Locale",
-        "id": "09Kvvkay28CRdOt7j8Ze7V",
+        "id": "61W8ZFX9Iui0kcGXb8mx6P",
         "version": 1,
         "space": {
           "sys": {
             "type": "Link",
             "linkType": "Space",
-            "id": "p5asbbjx1p90"
+            "id": "lkzyrltxuq5d"
           }
         },
         "environment": {
           "sys": {
             "type": "Link",
             "linkType": "Environment",
-            "id": "master"
+            "id": "master",
+            "uuid": "a326fc71-f39e-4dd9-b982-edbd72f01084"
           }
         },
         "createdBy": {
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "066RqBikAjzKy0SWUEtFvH"
+            "id": "1CDBzySYdM8I3Kvr3h6A0D"
           }
         },
-        "createdAt": "2020-04-22T09:10:22Z",
+        "createdAt": "2024-08-19T20:01:40Z",
         "updatedBy": {
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "066RqBikAjzKy0SWUEtFvH"
+            "id": "1CDBzySYdM8I3Kvr3h6A0D"
           }
         },
-        "updatedAt": "2020-04-22T09:10:22Z"
+        "updatedAt": "2024-08-19T20:01:40Z"
       }
     }
   ],
-  "webhooks": [],
+  "webhooks": [
+  ],
   "roles": [
     {
       "name": "Author",
@@ -467,7 +1874,9 @@
       "policies": [
         {
           "effect": "allow",
-          "actions": ["create"],
+          "actions": [
+            "create"
+          ],
           "constraint": {
             "and": [
               {
@@ -483,7 +1892,9 @@
         },
         {
           "effect": "allow",
-          "actions": ["read"],
+          "actions": [
+            "read"
+          ],
           "constraint": {
             "and": [
               {
@@ -499,7 +1910,9 @@
         },
         {
           "effect": "allow",
-          "actions": ["update"],
+          "actions": [
+            "update"
+          ],
           "constraint": {
             "and": [
               {
@@ -515,7 +1928,9 @@
         },
         {
           "effect": "allow",
-          "actions": ["create"],
+          "actions": [
+            "create"
+          ],
           "constraint": {
             "and": [
               {
@@ -531,7 +1946,9 @@
         },
         {
           "effect": "allow",
-          "actions": ["read"],
+          "actions": [
+            "read"
+          ],
           "constraint": {
             "and": [
               {
@@ -547,7 +1964,9 @@
         },
         {
           "effect": "allow",
-          "actions": ["update"],
+          "actions": [
+            "update"
+          ],
           "constraint": {
             "and": [
               {
@@ -563,39 +1982,47 @@
         }
       ],
       "permissions": {
-        "ContentModel": ["read"],
-        "Settings": [],
-        "ContentDelivery": [],
-        "Environments": [],
-        "EnvironmentAliases": []
+        "ContentModel": [
+          "read"
+        ],
+        "Settings": [
+        ],
+        "ContentDelivery": [
+        ],
+        "Environments": [
+        ],
+        "EnvironmentAliases": [
+        ],
+        "Tags": [
+        ]
       },
       "sys": {
         "type": "Role",
-        "id": "09Ly1xcRRW9vpcvEXo7Q9R",
+        "id": "62jukqljNY9aWeN8NsfQZt",
         "version": 0,
         "space": {
           "sys": {
             "type": "Link",
             "linkType": "Space",
-            "id": "p5asbbjx1p90"
+            "id": "lkzyrltxuq5d"
           }
         },
         "createdBy": {
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "066RqBikAjzKy0SWUEtFvH"
+            "id": "1CDBzySYdM8I3Kvr3h6A0D"
           }
         },
-        "createdAt": "2020-04-22T09:10:22Z",
+        "createdAt": "2024-08-19T20:01:41Z",
         "updatedBy": {
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "066RqBikAjzKy0SWUEtFvH"
+            "id": "1CDBzySYdM8I3Kvr3h6A0D"
           }
         },
-        "updatedAt": "2020-04-22T09:10:22Z"
+        "updatedAt": "2024-08-19T20:01:41Z"
       }
     },
     {
@@ -636,39 +2063,47 @@
         }
       ],
       "permissions": {
-        "ContentModel": ["read"],
-        "Settings": [],
-        "ContentDelivery": [],
-        "Environments": [],
-        "EnvironmentAliases": []
+        "ContentModel": [
+          "read"
+        ],
+        "Settings": [
+        ],
+        "ContentDelivery": [
+        ],
+        "Environments": [
+        ],
+        "EnvironmentAliases": [
+        ],
+        "Tags": [
+        ]
       },
       "sys": {
         "type": "Role",
-        "id": "09M0BGG76Wp2UNMBgSxKGv",
+        "id": "62jRnt7rXfowNzmHZS2Mhd",
         "version": 0,
         "space": {
           "sys": {
             "type": "Link",
             "linkType": "Space",
-            "id": "p5asbbjx1p90"
+            "id": "lkzyrltxuq5d"
           }
         },
         "createdBy": {
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "066RqBikAjzKy0SWUEtFvH"
+            "id": "1CDBzySYdM8I3Kvr3h6A0D"
           }
         },
-        "createdAt": "2020-04-22T09:10:22Z",
+        "createdAt": "2024-08-19T20:01:41Z",
         "updatedBy": {
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "066RqBikAjzKy0SWUEtFvH"
+            "id": "1CDBzySYdM8I3Kvr3h6A0D"
           }
         },
-        "updatedAt": "2020-04-22T09:10:22Z"
+        "updatedAt": "2024-08-19T20:01:41Z"
       }
     },
     {
@@ -677,7 +2112,9 @@
       "policies": [
         {
           "effect": "allow",
-          "actions": ["create"],
+          "actions": [
+            "create"
+          ],
           "constraint": {
             "and": [
               {
@@ -693,7 +2130,9 @@
         },
         {
           "effect": "allow",
-          "actions": ["create"],
+          "actions": [
+            "create"
+          ],
           "constraint": {
             "and": [
               {
@@ -709,7 +2148,9 @@
         },
         {
           "effect": "allow",
-          "actions": ["read"],
+          "actions": [
+            "read"
+          ],
           "constraint": {
             "and": [
               {
@@ -733,7 +2174,9 @@
         },
         {
           "effect": "allow",
-          "actions": ["update"],
+          "actions": [
+            "update"
+          ],
           "constraint": {
             "and": [
               {
@@ -764,7 +2207,9 @@
         },
         {
           "effect": "allow",
-          "actions": ["delete"],
+          "actions": [
+            "delete"
+          ],
           "constraint": {
             "and": [
               {
@@ -788,7 +2233,9 @@
         },
         {
           "effect": "allow",
-          "actions": ["read"],
+          "actions": [
+            "read"
+          ],
           "constraint": {
             "and": [
               {
@@ -812,7 +2259,9 @@
         },
         {
           "effect": "allow",
-          "actions": ["update"],
+          "actions": [
+            "update"
+          ],
           "constraint": {
             "and": [
               {
@@ -843,7 +2292,9 @@
         },
         {
           "effect": "allow",
-          "actions": ["delete"],
+          "actions": [
+            "delete"
+          ],
           "constraint": {
             "and": [
               {
@@ -867,39 +2318,47 @@
         }
       ],
       "permissions": {
-        "ContentModel": ["read"],
-        "Settings": [],
-        "ContentDelivery": [],
-        "Environments": [],
-        "EnvironmentAliases": []
+        "ContentModel": [
+          "read"
+        ],
+        "Settings": [
+        ],
+        "ContentDelivery": [
+        ],
+        "Environments": [
+        ],
+        "EnvironmentAliases": [
+        ],
+        "Tags": [
+        ]
       },
       "sys": {
         "type": "Role",
-        "id": "09MrKDfvFxjsr5PMEJjLBN",
+        "id": "62kxVY99Xg7ZCHvmIYv28r",
         "version": 0,
         "space": {
           "sys": {
             "type": "Link",
             "linkType": "Space",
-            "id": "p5asbbjx1p90"
+            "id": "lkzyrltxuq5d"
           }
         },
         "createdBy": {
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "066RqBikAjzKy0SWUEtFvH"
+            "id": "1CDBzySYdM8I3Kvr3h6A0D"
           }
         },
-        "createdAt": "2020-04-22T09:10:22Z",
+        "createdAt": "2024-08-19T20:01:41Z",
         "updatedBy": {
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "066RqBikAjzKy0SWUEtFvH"
+            "id": "1CDBzySYdM8I3Kvr3h6A0D"
           }
         },
-        "updatedAt": "2020-04-22T09:10:22Z"
+        "updatedAt": "2024-08-19T20:01:41Z"
       }
     },
     {
@@ -908,7 +2367,9 @@
       "policies": [
         {
           "effect": "allow",
-          "actions": ["read"],
+          "actions": [
+            "read"
+          ],
           "constraint": {
             "and": [
               {
@@ -924,7 +2385,9 @@
         },
         {
           "effect": "allow",
-          "actions": ["read"],
+          "actions": [
+            "read"
+          ],
           "constraint": {
             "and": [
               {
@@ -940,7 +2403,9 @@
         },
         {
           "effect": "allow",
-          "actions": ["update"],
+          "actions": [
+            "update"
+          ],
           "constraint": {
             "and": [
               {
@@ -963,7 +2428,9 @@
         },
         {
           "effect": "allow",
-          "actions": ["update"],
+          "actions": [
+            "update"
+          ],
           "constraint": {
             "and": [
               {
@@ -986,39 +2453,47 @@
         }
       ],
       "permissions": {
-        "ContentModel": ["read"],
-        "Settings": [],
-        "ContentDelivery": [],
-        "Environments": [],
-        "EnvironmentAliases": []
+        "ContentModel": [
+          "read"
+        ],
+        "Settings": [
+        ],
+        "ContentDelivery": [
+        ],
+        "Environments": [
+        ],
+        "EnvironmentAliases": [
+        ],
+        "Tags": [
+        ]
       },
       "sys": {
         "type": "Role",
-        "id": "09MWbiu0nlnFuYVtcAU3wf",
+        "id": "62kViK6rY21bViQGFwszlV",
         "version": 0,
         "space": {
           "sys": {
             "type": "Link",
             "linkType": "Space",
-            "id": "p5asbbjx1p90"
+            "id": "lkzyrltxuq5d"
           }
         },
         "createdBy": {
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "066RqBikAjzKy0SWUEtFvH"
+            "id": "1CDBzySYdM8I3Kvr3h6A0D"
           }
         },
-        "createdAt": "2020-04-22T09:10:22Z",
+        "createdAt": "2024-08-19T20:01:41Z",
         "updatedBy": {
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "066RqBikAjzKy0SWUEtFvH"
+            "id": "1CDBzySYdM8I3Kvr3h6A0D"
           }
         },
-        "updatedAt": "2020-04-22T09:10:22Z"
+        "updatedAt": "2024-08-19T20:01:41Z"
       }
     }
   ]

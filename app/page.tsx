@@ -1,10 +1,8 @@
 import { draftMode } from "next/headers";
 import { Markdown } from "@/lib/markdown";
-
 import Projects from "./projects";
 import Laptop from "./assets/laptop.png"
 import ContentfulImage from "../lib/contentful-image";
-
 import { getAllPosts, getHeroSection, getAboutSection } from "@/lib/api";
 
 export default async function Page() {
@@ -22,7 +20,6 @@ export default async function Page() {
         <ContentfulImage
           src={Laptop}
           height="60"
-          className="rounded-full"
           alt="github logo"
         />
         </div>
