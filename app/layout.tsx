@@ -2,6 +2,7 @@ import "./globals.css";
 import { Inter } from "next/font/google";
 import GitHubLogo from "./assets/github.svg";
 import LinkedInLogo from "./assets/linkedin.svg"
+import InstagramLogo from "./assets/instagram.svg"
 import ContentfulImage from "../lib/contentful-image";
 
 export const metadata = {
@@ -21,7 +22,7 @@ function Footer() {
       <div className="footer-container">
         <div className="social-links">
           <div className="link-container">
-            <a href="https://github.com">
+            <a href="https://github.com" target="_blank">
                 <ContentfulImage
                 src={GitHubLogo}
                 height="100"
@@ -31,12 +32,22 @@ function Footer() {
             </a>
           </div>
           <div className="link-container">
-            <a href="https://linkedin.com">
+            <a href="https://linkedin.com" target="_blank">
                 <ContentfulImage
                 src={LinkedInLogo}
                 height="100"
                 className="rounded-full"
                 alt="linkedin logo"
+              />
+            </a>
+          </div>
+          <div className="link-container">
+            <a href="https://instagram.com" target="_blank">
+                <ContentfulImage
+                src={InstagramLogo}
+                height="100"
+                className="rounded-full"
+                alt="instagram logo"
               />
             </a>
           </div>

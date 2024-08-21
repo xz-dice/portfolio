@@ -47,10 +47,6 @@ async function fetchGraphQL(query: string, preview = false): Promise<any> {
   ).then((response) => response.json());
 }
 
-// function extractPost(fetchResponse: any): any {
-//   return fetchResponse?.data?.projectCollection?.items?.[0];
-// }
-
 function extractPost(fetchResponse: any): any {
   return fetchResponse?.data?.projectCollection?.items?.[0];
 }
@@ -106,8 +102,10 @@ export async function getAboutSection(isDraftMode: boolean): Promise<any> {
         isDraftMode ? "true" : "false"
       }) {
         items {
-          title,
-          aboutDescription
+          title
+          description {
+            json
+          }
         }
       }
     }`,
@@ -125,7 +123,6 @@ export async function getAllPosts(isDraftMode: boolean): Promise<any[]> {
         items {
           title
       slug
-      websiteLink
       gitHubLink
       image {
         url
@@ -154,7 +151,6 @@ export async function getPostAndMorePosts(
         items {
           title
           slug
-          websiteLink
           gitHubLink
           shortDescription
           longDescription {

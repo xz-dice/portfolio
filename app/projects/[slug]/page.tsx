@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { draftMode } from "next/headers";
 
-import MoreStories from "../../projects";
 import CoverImage from "../../cover-image";
 
 import { Markdown } from "@/lib/markdown";
@@ -43,9 +42,6 @@ export default async function PostPage({
         <div className="links">
         {post.gitHubLink && (
             <a href={post.gitHubLink} target="_blank">GitHub</a>
-          )}
-        {post.websiteLink && (
-            <a href={post.websiteLink} target="_blank">Live Demo</a>
           )}
         </div>
         <div className="project-description">

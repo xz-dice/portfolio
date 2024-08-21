@@ -1,14 +1,15 @@
 import { draftMode } from "next/headers";
+import { Markdown } from "@/lib/markdown";
 
 import Projects from "./projects";
-
+import Laptop from "./assets/laptop.png"
+import ContentfulImage from "../lib/contentful-image";
 
 import { getAllPosts, getHeroSection, getAboutSection } from "@/lib/api";
 
 export default async function Page() {
   const { isEnabled } = draftMode();
-  const allPosts = await getAllPosts(isEnabled);
-  const morePosts = allPosts;
+  const allProjects = await getAllPosts(isEnabled);
   const hero = await getHeroSection(isEnabled);
   const heroItem = hero[0];
   const about = await getAboutSection(isEnabled);
@@ -18,7 +19,12 @@ export default async function Page() {
     <section className="homepage-content">
       <section className="navigation">
         <div className="logo">
-          <p>💙</p>
+        <ContentfulImage
+          src={Laptop}
+          height="60"
+          className="rounded-full"
+          alt="github logo"
+        />
         </div>
         <div className="nav-links">
           <a href="#">GitHub</a>
@@ -34,11 +40,13 @@ export default async function Page() {
           <hr/>
           <section className="about-section" id="about">
             <h2>{aboutItem.title}</h2>
-            <p>{aboutItem.aboutDescription}</p>
+            <div className="about-content">
+              <Markdown content={aboutItem.description} />
+            </div>
           </section>
         </section>
         <section className="page-right">
-          <Projects morePosts={morePosts} />
+          <Projects morePosts={allProjects} />
         </section>
       </div>
     </section>
