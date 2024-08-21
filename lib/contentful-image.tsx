@@ -3,7 +3,7 @@
 import Image from "next/image";
 
 interface ContentfulImageProps {
-  src: string;
+  src: any;
   width?: number;
   quality?: number;
   [key: string]: any; // For other props that might be passed
