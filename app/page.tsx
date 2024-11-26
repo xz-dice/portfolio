@@ -34,7 +34,6 @@ export default async function Page() {
             <h1>{heroItem.title}</h1>
             <p className="subtitle">{heroItem.subtitle}</p>
           </section>
-          <hr/>
           <section className="about-section" id="about">
             <h2>{aboutItem.title}</h2>
             <div className="about-content">

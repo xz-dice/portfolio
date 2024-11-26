@@ -1,8 +1,10 @@
 import Link from "next/link";
 import { draftMode } from "next/headers";
 import CoverImage from "../../cover-image";
+import BackButton from "../../back-button"
 import { Markdown } from "@/lib/markdown";
 import { getAllPosts, getPost } from "@/lib/api";
+
 
 export async function generateStaticParams() {
   const allPosts = await getAllPosts(false);
@@ -23,9 +25,9 @@ export default async function PostPage({
   return (
     <div className="project-page">
       <h2 className="project-heading">
-        <span className="logo">⬅️</span>
+        {/* <span className="logo"></span> */}
         <Link href="/" className="">
-          Home
+        <BackButton/>
         </Link>
         .
       </h2>

@@ -15,7 +15,11 @@ function PostPreview({
   return (
     <div className="project">
       <div className="project-title">
-        <CoverImage title={title} slug={slug} url={image.url} />
+        {image && image.url ? (
+          <CoverImage title={title} slug={slug} url={image.url} />
+        ) : (
+          <div>No Image Available</div>
+        )}
       </div>
       <div className="project-content">
         <h3 className="">
